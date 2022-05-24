@@ -20,5 +20,17 @@ function getDates(string $myDate, string $fatherDate, string $motherDate) : arra
 		],
 	];
 }
-var_dump('11-01-1993', '31=01=1958', '10.02.1960');
- echo "<br>";
+var_dump(getDates('11-01-1993', '31-01-1958', '10.02.1960'));
+echo "<br>";
+/**
+ * Задание 2
+*Вывести на монитор даты рождения свою и родителей с помощью класса DateTime
+ */
+$myDate = new DateTime('11.01.1993');
+echo $myDate->format('Y-m-d');
+echo "<br>";
+$fatherDate = new DateTime('31=01=1958');
+echo $fatherDate->format('Y-m-d');
+echo "<br>";
+$motherDate = new DateTime('10.02.1960');
+echo $motherDate->format('Y-m-d');
