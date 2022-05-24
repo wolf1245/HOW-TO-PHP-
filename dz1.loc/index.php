@@ -23,3 +23,10 @@ function fibonacchi($num)
 }
 echo fibonacchi(15);
 echo "<br>";
+/**
+ * Задание 3
+*Создать анонимную функцию возвращающую пустой массив
+ */
+$anon = array();
+var_dump($anon);
+echo "<br>";
