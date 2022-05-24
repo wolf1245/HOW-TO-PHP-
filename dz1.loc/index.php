@@ -4,11 +4,11 @@ declare(strict_type=1);
  * Задание 1
 *Создать пользовательскую функцию которая выведет слово "Привет"
  */
-function hello() : string
+function hello(string $text) : string
 {
-	return "Hello!";
+	return $text;
 }
-echo hello();
+echo hello('Hello!');
 echo "<br>";
 /**
  * Задание 2
@@ -30,3 +30,13 @@ echo "<br>";
 $anon = array();
 var_dump($anon);
 echo "<br>";
+/**
+ * Задание 4
+*Создать пользовательскую функцию которая использует функцию из задания 1 и выводит
+*словосочетание "Привет мир".
+ */
+function wordHello($fun)
+{
+	echo $fun;
+}
+wordHello(hello('Привет мир!'));
