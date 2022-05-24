@@ -8,7 +8,13 @@ declare(strict_types=1);
 if(isset($_GET['submit'])) {
 	print_r([$_GET['name'], $_GET['password']]);
 } else {
-	echo "Что то пошло не так";
+	echo "Что то пошло не так GET";
+}
+echo "<br>";
+if(isset($_POST['submit'])) {
+	print_r([$_POST['name'], $_POST['password']]);
+} else {
+	echo "Что то пошло не так POST";
 }
  ?>
  <!DOCTYPE html>
@@ -22,6 +28,12 @@ if(isset($_GET['submit'])) {
  <body>
 	 <form action="index.php" method="GET">
 		 <legend>Form GET</legend>
+		 <input type="text" placeholder="Name" name="name">
+		 <input type="text" placeholder="Password" name="password">
+		 <input type="submit" name="submit">
+		</form>
+		<form action="index.php" method="POST">
+		 <legend>Form POST</legend>
 		 <input type="text" placeholder="Name" name="name">
 		 <input type="text" placeholder="Password" name="password">
 		 <input type="submit" name="submit">
