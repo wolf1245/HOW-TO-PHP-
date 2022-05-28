@@ -1,0 +1,8 @@
+To: nobody@example.com
+Subject: Test
+X-PHP-Originating-Script: 0:index.php
+From: wolf22394@gmail.com
+Reply-To: wolf22394@gmail.com
+X-Mailer: PHP/7.4.21
+
+dgsdgdsgsdgdsfsdgsdfsdfsdfddsfsdfsdfsdffsdfsdfsdfsfsfsdfsdfsfsfsfsfsfs
